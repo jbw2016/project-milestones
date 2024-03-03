@@ -1,0 +1,97 @@
+/* CSS styling for all body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* CSS styling for all header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/* CSS styling for navigation for the unordered list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+/* this is the viewport navigation for tablets, laptops, and desktops */
+@media (min-width: 750px) {
+    nav ul {
+    display: block;
+    }
+    button#menu-toggle {
+    display: none;
+    }
+}
+
+/* this is the viewport navigation for phones and small devices */
+@media (max-width: 749px) {
+    button#menu-toggle {
+    display: block;
+    }
+    div.text-with-image-container {
+        flex-direction: column;
+    }
+    nav ul.show {
+        display: block;
+    }
+} 
+
+/* CSS styling for navigation for the unordered list's listitems */
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+/* CSS styling for all sections*/
+section {
+    padding: 20px;
+}
+/* CSS styling for the header 2 home.title */
+h2.home-title {
+    text-align: center;
+}
+/* CSS styling for the paragraph home content */
+p.home-content {
+    text-align: center;
+}
+/* CSS styling for all footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* CSS styling for the button */
+button#myBtn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/* CSS styling for the container of my image and text */
+div.text-with-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* CSS styling for my image */
+img.my-image {
+    max-width: 50%;
+    width: 100%;
+    padding: 25px;
+}
+/* CSS styling for the image text */
+p.image-text {
+    max-width: 50%;
+    width: 100%;
+    padding: 25px;
+}
